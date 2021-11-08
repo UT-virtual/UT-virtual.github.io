@@ -4,6 +4,8 @@ title: Home
 author: pollenjp
 ---
 
+<h1>{{ page.title }}</h1>
+
 このページは正規のウェブサイトではありません.
 
 - Web Page (正規) : <https://utvirtual.tech/>
