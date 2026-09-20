@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>リダイレクト中...</title>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var match = path.match(/ev-VRCircleMeeting(202[2-5])/i);
+      if (match) {
+        var year = match[1];
+        window.location.replace("https://vrsc-" + year + ".utvirtual.tech/");
+        return;
+      }
+      var vrscMatch = path.match(/VRSC-(202[2-5])/i);
+      if (vrscMatch) {
+        var year = vrscMatch[1];
+        window.location.replace("https://vrsc-" + year + ".utvirtual.tech/");
+        return;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1>404 Not Found</h1>
+  <p>指定されたページは見つかりませんでした。</p>
+  <p><a href="https://utvirtual.tech/">UT-virtual 公式サイトへ戻る</a></p>
+</body>
+</html>
